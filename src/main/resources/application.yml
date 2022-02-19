@@ -1,0 +1,37 @@
+spring:
+  datasource:
+    username: root
+    password: hd123456
+    url: jdbc:mysql://192.168.8.3:3306/IvTMngSys?useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&serverTimezone=UTC
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+    initialSize: 5
+    minIdle: 5
+    maxActive: 20
+    maxWait: 60000
+    timeBetweenEvictionRunsMillis: 60000
+    minEvictableIdleTimeMillis: 300000
+    validationQuery: SELECT 1 FROM DUAL
+    testWhileIdle: true
+    testOnBorrow: false
+    testOnReturn: false
+    poolPreparedStatements: true
+    filters: stat,wall,slf4j
+    maxPoolPreparedStatementPerConnectionSize: 20
+    useGlobalDataSourceStatP: true
+    connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=500
+  thymeleaf:
+    cache: false
+  mvc:
+    view:
+      prefix: /jsp/admin/
+      suffix: .jsp
+    static-path-pattern: /static/**
+server:
+  port: 7098
+#  ssl:
+#    key-store: server.jks
+#    #此密码与生成.keystore文件一致
+#    key-store-password: Uc1*QIkXPf9Nqx4v
+#    key-store-type: JKS
+#    key-alias: tomcat

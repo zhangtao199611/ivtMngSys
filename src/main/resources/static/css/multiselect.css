@@ -1,0 +1,60 @@
+.selectShow{
+    height: 40px;
+}
+.selectShow ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+.selectShow ul .cleanItem{
+    border: solid thin #AFCBCF;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: #AFCBCF;
+    width: 100px;
+}
+.selectShow ul .cleanItem:hover{
+    background-color: #AFCBBF;
+}
+.selectShow ul li{
+    min-width: 100px;
+    text-align: center;
+    float: left;
+    height: 30px;
+    line-height: 30px;
+}
+.selectShow ul li i{
+    font-size: 20px;
+    padding: 0px 5px;
+}
+.selectShow ul .selectItem{
+    border: solid thin #0E90D2;
+    font-size: 14px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.selectShow ul .selectItem:hover{
+border: solid thin #DB7093;
+}
+.selectShow ul .selectItem i{
+    float: right;
+    margin-left: 5px;
+}
+.selectList{
+    height: 40px;
+}
+.selectList ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+.selectList ul li{
+    float: left;
+    margin-left: 10px;
+    line-height: 40px;
+    cursor: pointer;
+}
+.selectList ul li i{
+    margin-right: 3px;
+}
+

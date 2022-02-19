@@ -1,0 +1,55 @@
+#账户正常
+configuration.lockNormal: 0
+#账户异常
+configuration.lockException: 1
+#账户待激活
+configuration.lockToActivate: 3
+#账户删除
+configuration.lockDelete: 5
+#账户初始化密码
+configuration.password: 123456
+#用户状态开启
+configuration.statusOFF: 0
+#用户状态冻结
+configuration.statusNO: 1
+#用户状态冻结
+configuration.statusDelete: 3
+#部门状态开启
+configuration.deptStatusOFF: 0
+#部门状态关闭
+configuration.deptStatusNO: 1
+#岗位状态正常
+configuration.stationStatusOFF: 0
+#岗位状态异常
+configuration.stationStatusON: 1
+#入库状态
+configuration.storage: 1
+#出库状态
+configuration.outStorage: 0
+#损耗状态
+configuration.loss: 2
+#交易类型
+#出库类型
+configuration.stockDetailTypeOut: 0
+#入库状态
+configuration.stockDetailTypeStorage: 1
+#损耗状态
+configuration.stockDetailTypeLoss: 2
+#退货状态
+configuration.stockDetailReturns: 3
+#预存
+configuration.stockDetailTypeStatusPrestore: 0
+#直接入库
+configuration.stockDetailTypeStatusEffect: 1
+#打印状态
+configuration.printStatusOK: 1
+configuration.printStatusNO: 2
+#菜单级别
+configuration.menuILevel1: 1
+configuration.menuILevel2: 2
+configuration.menuILevel3: 3
+#菜单编号
+#菜单生效
+configuration.menuLockOF: 0
+#菜单生效
+configuration.menuLockNO: 1

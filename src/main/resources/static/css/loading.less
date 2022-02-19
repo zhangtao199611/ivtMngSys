@@ -1,0 +1,59 @@
+//@import "reset.css";
+
+.loadingBox {
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 999;
+
+    .loadingIcon {
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        span {
+            height: 64px;
+            width: 64px;
+            background: url(../img/loading.gif) center center no-repeat;
+            background-size: 100% 100%;
+            animation: rotateBox 2s linear infinite;
+        }
+    }
+
+    .loadingMain {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        width: 100vw;
+        height: 100vh;
+        cursor: not-allowed;
+    }
+
+    p {
+        color: #fff;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    @keyframes rotateBox {
+        0 {
+            transform: rotate(0deg);
+        }
+
+        50% {
+            transform: rotate(180deg);
+        }
+
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+}
+
+.loadingBox[data-show="0"] {
+    display: none;
+}
